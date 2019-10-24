@@ -1,23 +1,10 @@
 /* * auala01outubro2019.c
- *
  * Copyright 2019 Luis Antonio <luisdevops@lenovo440>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
  * MA 02110-1301, USA.
  */
-
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -33,7 +20,6 @@ int main(){
     return 0;
 }
 void menu(){
-    system("clear");
     int opcao;
     do{
         printf(" \n Opções: ");
@@ -44,7 +30,7 @@ void menu(){
         printf(" \n 5. Excluir Pessoa" );
         printf(" \n 0. Para sair. \n " );
         printf(" \n Digite a opção desejada: ");
-        scanf("%d%", &opcao);
+        scanf("%d", &opcao);
         getchar();
         switch(opcao)
         {
@@ -54,16 +40,16 @@ void menu(){
             case 2:
                 cadastroPessoa();
                 break;
-          /*  case 3:
-                consultarPessoa();
-                break;
-            case 4:
-                alterarPessoa();
-                break;
-            case 5:
-                excluir();
-                break;
-*/
+                /*  case 3:
+                      consultarPessoa();
+                      break;
+                  case 4:
+                      alterarPessoa();
+                      break;
+                  case 5:
+                      excluir();
+                      break;
+      */
             default:
                 printf(" \n Obrigado por usar o programa. ");
                 break;
